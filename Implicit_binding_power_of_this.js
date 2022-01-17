@@ -128,6 +128,60 @@ person_two.show_name()
 person_two.show_age()
 
 
+//ex 5
+//ex3
+// function to object
+var Person = (name,age) =>{
+    return{
+        name:name,
+        age:age,
+        show_name: function()
+        {
+            console.log(this.name)
+        },
+        show_age: function()
+        {
+            console.log(this.age)
+        },
+        father_info: function(name,age){
+            return {
+                name:name,
+                age:age,
+                father_name: function()
+                {
+                    console.log(this.name)
+                },
+                father_age: function()
+                {
+                    console.log(this.age)
+                }
+            }
+        }
+
+
+    }
+}
+
+var person_one = Person('sakib',35)
+// access object property
+person_one.show_name()
+person_one.show_age()
+//person_one.father_info("rabbbani uncle",55)
+var person_one_father_info = person_one.father_info("rabbbani uncle",55)
+person_one_father_info.father_name()
+person_one_father_info.father_age()
+
+
+console.log("--------------------------------------------")
+
+var person_two =Person('tamim',83)
+person_two.show_name()
+person_two.show_age()
+var person_two_father_info = person_two.father_info("mokles uncle",55)
+person_two_father_info.father_name()
+person_two_father_info.father_age()
+
+
 
 
 
