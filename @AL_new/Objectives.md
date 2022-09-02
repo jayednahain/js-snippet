@@ -45,4 +45,28 @@ console.log(this.name);
 > this "this.name" will show the value of "name" a particaular
 >> if the object we are passing thought the function have a name property  
 
+```js
+var sakib = {
+    name: "sakib",
+    age:30,
+};
+var tamim = {
+    name:"tamim",
+    age: 45,
+};
+```
+> this object will pass though the "printPlayerNameFunction"
+
+```js 
+printPlayerNameFunction(sakib);
+```
+> this will gain the "showPlayerName" function as their own property
+>> so Now we can call the property though the object
+```js
+sakib.showPlayerName()
+```
+#
+# Implecit binding Example two
+
+
 
