@@ -66,7 +66,7 @@ printPlayerNameFunction(sakib);
 sakib.showPlayerName()
 ```
 #
-# Implecit binding Example two
+# Ex 2
 
 
 

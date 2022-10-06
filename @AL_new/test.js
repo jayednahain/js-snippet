@@ -17,6 +17,7 @@
 //         }
 // }
 
+// example -2.1 explicit
 // var sakib = {
 //     name: "sakib",
 //     age:30,
@@ -32,6 +33,44 @@
 // printPlayerNameFunction(sakib);
 // printPlayerNameFunction(tamim);
 // sakib.showPlayerName()
+
+
+// var printPlayerNameFunction = function (obj){    
+//         obj.showPlayerName = function(){
+//             var name = this.name;
+//             console.log(name);
+//         }
+//         obj.showAge
+// }
+
+// var sakib = {
+//     name: "sakib",
+//     age:30,
+//     prentsInfo:{
+//         name:"sakib father",
+//         age:"sakib mother"
+//     }
+// };
+
+// var tamim = {
+//     name:"tamim",
+//     age: 45,
+//     prentsInfo:{
+//         name:"tamim father",
+//         age:"tamim mother"
+//     }
+// };
+
+// object ganing a property using this 
+//1st property
+// printPlayerNameFunction(sakib);
+// sakib.showPlayerName()
+
+
+//nasted property
+// printPlayerNameFunction(sakib.prentsInfo);
+// printPlayerNameFunction(tamim.prentsInfo);
+// sakib.prentsInfo.showPlayerName()
 
 
 // example -3.1 explicit -single object
