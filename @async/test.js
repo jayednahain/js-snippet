@@ -37,11 +37,39 @@
 // console.log("----complete order from customer 1")
 
 //promise
+// //p-ex-1
+// const hasMeeting =true;
+// const metting = new Promise((resolve,reject)=>{
+//     //if metting == false
+//     if(!hasMeeting){
+//         // if there is no meeting then crate a meeting and send it to resolve
+//         const meetingDetails = {
+//             name:"Techinal meeting",
+//             location:"Google meet",
+//             time :"10:00am"
+//         }
+//         resolve(meetingDetails);
+//     }
+//     //if there is already a meeting
+//     //then send it to reject
+//     else{
+//         reject(new Error("meeting already scheduled"));
+//     }
+// })
+// // for using promise we need to chain two things 
+// //.then .catch
+// metting.then((res)=>{
+//     console.log(res);
+// }).catch((error)=>{
+//     console.log(error.message)
+// })
 
+
+//chain promise
+// one promise depend on another promise
+//p-ex-2
 const hasMeeting =true;
-
 const metting = new Promise((resolve,reject)=>{
-
     //if metting == false
     if(!hasMeeting){
         // if there is no meeting then crate a meeting and send it to resolve
@@ -57,12 +85,28 @@ const metting = new Promise((resolve,reject)=>{
     else{
         reject(new Error("meeting already scheduled"));
     }
-
 })
-// for using promise we need to chain two things 
-//.then .catch
+
+// const addToCalendar = (meetingDetails)=>{
+//     return new Promise((reject,resolve)=>{
+//         const calenderTime = `${meetingDetails.name} has been timed on ${meetingDetails.location} at ${meetingDetails.time}`
+//         resolve(calenderTime)
+//     })
+// }
+
+// simplify the code
+
+const addToCalendar = (meetingDetails)=>{
+    return new Promise((reject,resolve)=>{
+        const calenderTime = `${meetingDetails.name} has been timed on ${meetingDetails.location} at ${meetingDetails.time}`
+        resolve(calenderTime)
+    })
+}
+
+
 metting.then((res)=>{
     console.log(res);
 }).catch((error)=>{
+
     console.log(error.message)
 })
