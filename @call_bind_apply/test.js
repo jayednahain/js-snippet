@@ -26,19 +26,34 @@
 
 
 
-data = "oneTwoThreeFour"
+// data = "oneTwoThreeFour"
 
 
-function camelcase(s){
-  let count = 0;
-  for(let i = 0;i<s.length;i++){
-    if (s[i].toUpperCase() == s[i]){
-      // console.log("found upper")
-      count = count+1
-    }
+// function camelcase(s){
+//   let count = 0;
+//   for(let i = 0;i<s.length;i++){
+//     if (s[i].toUpperCase() == s[i]){
+//       // console.log("found upper")
+//       count = count+1
+//     }
     
-    // console.log(s[i])
-  }
-  return count;
+//     // console.log(s[i])
+//   }
+//   return count;
 
-}console.log(camelcase(data))
+// }
+// console.log(camelcase(data))
+
+function minimumNumber(n, password) {
+  numbers = "0123456789";
+  lower_case = "abcdefghijklmnopqrstuvwxyz";
+  upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  special_characters = "!@#$%^&*()-+";
+  console.log("length: "+length)
+  console.log("current password: "+password)
+  if (n>6){
+    
+  }
+
+}
+minimumNumber()
