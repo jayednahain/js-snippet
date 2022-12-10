@@ -1,0 +1,2 @@
+- how to set this key word manually
+- and why we need to do that !

@@ -61,33 +61,61 @@
 // console.log('-------------------------------')
 // transfrom("the NAME is JAYed NAHIAN",oneWord)
 
-const greet = function(valOne){
-    return function(valuTwo){
-        console.log(`out side function perms ${valOne} | return function perms ${valuTwo} `)
+// const greet = function(valOne){
+//     return function(valuTwo){
+//         console.log(`out side function perms ${valOne} | return function perms ${valuTwo} `)
     
-    }
-}
+//     }
+// }
 
-const bodyOne = greet("1st perms")
-// if we only call bodyOne it will valTwo as undefine 
+/// if we only call bodyOne it will valTwo as undefine 
 // bodyOne("2nd perms")
 
 // greet("presone_one")("person_two");
 
 // greet function using arrow function
-const greet2 = (valOne)=>{
-    return (valuTwo)=>{
-        console.log(`out side function perms ${valOne} | return function perms ${valuTwo} `)
+// const greet2 = (valOne)=>{
+//     return (valuTwo)=>{
+//         console.log(`out side function perms ${valOne} | return function perms ${valuTwo} `)
     
-    }
-}
+//     }
+// }
 
 // greet2("presone_one")("person_two");
 // adding on arrow function
 
-const greeArr = permsOne =>
-permsTwo => permsOne+permsTwo
+// const greeArr = permsOne =>
+// permsTwo => permsOne+permsTwo
 
 // greeArr("1")("hi")
-console.log(greeArr()())
+// console.log(greeArr()())
+
+// 133
+// how 
+
+
+//stack -2
+function Person(name,email){
+    this.name = name;
+    this.email = email;
+}
+
+var Person_obj1 = new Person("jayed", "jaye@yahoo")
+// when we use new key word
+/*
+name={}
+email={}
+- object are created
+- if we console the object we will see 
+- two properties created according to this object
+*/
+// console.log(Person_obj1.name);
+
+var Per_obj2 = new Person("data_1","data@2")
+var Per_obj3 = new Person("data_2", "data@3")
+console.log(Person_obj1.name);
+console.log(Per_obj2.name);
+console.log(Per_obj3.name);
+
+
 

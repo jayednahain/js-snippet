@@ -1,0 +1,2 @@
+- class used in javaScript as constructor pattern
+- 
